@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOX MODEL</title>
+    <style>
+       body{
+        background-color: #bea730;
+       }
+        .container{
+            color: rgb(59, 43, 34);
+            background-color: rgb(212, 142, 92)  ;
+            border: 3px black solid;
+            border-radius: 100px;
+            width: 600px;
+            
+        }
+        /* syntax of margin and padding is same for dimantion */
+        h1{
+            padding-left: 100;
+            color: white;
+            background-color: black;
+            width: 400px;
+            padding-left: 100px;
+        }
+        #pranav{
+
+            padding: 100px; 
+            margin: 10px;
+        }
+        #baban{
+            /* here we give individual length for padding and margin  */
+            padding-top: 10px;
+            padding-right: 20;
+            padding-bottom: 30px;
+            padding-left: 40px;
+            margin: 10px;
+
+        }
+        #garje{
+            /* here we can give values to all size at single time */
+            /* padding: top right bottom left; */
+            padding: 10px 20px 30px 40px ;
+            margin: 10px;
+        }
+        #sadhana{
+            /* here padding is done in left(y axis) and right (x axis) */
+            /* padding: y(top/bottom) x(left/right); */
+            padding:100px 200px;
+            margin: 30px;
+        }
+        #shravani1{
+            padding:50px 50px;
+            margin: 30px;
+            box-sizing: border-box;
+        }
+        #shravani2{
+            padding:50px 50px;
+            margin: 30px;
+           
+        }
+    </style>
+</head>
+<body>
+    <h1>Digram of box model:</h1>
+    <img src="css-box-model.png" alt="internate loss">
+    <div class="container" id="pranav">
+        <h2>Pranav Garje</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus aperiam nam perferendis dolore vitae sed earum soluta eveniet labore voluptates veritatis, fuga ab magnam sint facilis. Id asperiores incidunt reprehenderit.</p>
+    </div>
+    <div class="container" id="baban">
+        <h2>Pranav Garje</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus aperiam nam perferendis dolore vitae sed earum soluta eveniet labore voluptates veritatis, fuga ab magnam sint facilis. Id asperiores incidunt reprehenderit.</p>
+    </div>
+    <div class="container" id="garje">
+        <h2>Pranav Garje</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus aperiam nam perferendis dolore vitae sed earum soluta eveniet labore voluptates veritatis, fuga ab magnam sint facilis. Id asperiores incidunt reprehenderit.</p>
+    </div>
+    <div class="container" id="sadhana">
+        <h2>Pranav Garje</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus aperiam nam perferendis dolore vitae sed earum soluta eveniet labore voluptates veritatis, fuga ab magnam sint facilis. Id asperiores incidunt reprehenderit.</p>
+    </div>
+    <div class="container" id="shravani1">
+        <h2>costant box size</h2>
+        <h5>As we given width 600px in "style container"</h5>
+        <p>As we know that after padding the size of the border box changes atomaticaly i.e the with of the box get increases as we increase the padding , to avoid this we use the syntax <strong>box-sizing: border-box</strong>,now the width of the box will not change but the hight will increase</p>
+    </div>
+    <div class="container" id="shravani2">
+        <h2>No costant box size</h2>
+        <p>As we know that after padding the size of the border box changes atomaticaly i.e the with of the box get increases as we increase the padding , to avoid this we use the syntax <strong>box-sizing: border-box</strong>,now the width of the box will not change but the hight will increase</p>
+    </div>
+    
+</body>
+</html>

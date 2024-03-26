@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .contener{
+            display: flex;
+        }
+        .card{
+            padding: 2px;
+            margin: 5px;
+            /* border: 2px solid green; */
+            background-color: greenyellow;
+            box-shadow: 2px 3px red;
+            /* in the above example 2px is shadow in x and  3px ia shadow in y */
+            box-shadow: 2px 3px 6px 1px red;
+            /* in above example 2px is shadow in x direction , 3px is shadow in y direction , 6px is shadow blur ; */
+            
+            /* box-shadow: inset 2px 5px green; */
+
+            /* FOR MULTIPUL SHADOWS  */
+
+            /* box-shadow: 3px 5px green , 4px 5px red; */
+            
+        }
+        .card h2 {
+            text-shadow: 2px 2px 2px orange;
+        }
+    </style>
+</head>
+<body>
+    <div class="contener">
+        <div class="card" id="card1">
+            <h2>This is Cpp Course</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, obcaecati provident laudantium beatae ad aut voluptas sit ex perferendis possimus numquam repellendus optio aliquam quos labore perspiciatis esse, accusantium aliquid nemo illum eaque vitae!</p>
+        </div>
+        <div class="card" id="card2">
+            <h2>This is html Course</h2>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit maxime quos est sunt neque quasi, nemo distinctio rem dolores nihil accusantium culpa. Possimus odit sunt rem esse facere, nostrum nihil iure qui. Consequatur, ipsum.
+        </p></div>
+
+        <div class="card" id="card3">
+            <h2>Card 3</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis molestiae architecto ipsa rerum odio soluta quisquam sint atque, eveniet, id explicabo eius mollitia consequatur ducimus, qui doloremque accusamus beatae ipsum itaque quo? Ex, repellendus!</p>
+    </div>
+    </div>
+</body>
+</html>

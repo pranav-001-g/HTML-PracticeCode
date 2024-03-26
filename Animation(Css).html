@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>key frame and animation</title>
+    <style>
+        :root{
+            --width:200px;
+            --height:200px
+        }
+.container{
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+    
+}
+.box{
+    background-color: yellowgreen;
+    width: var(--width);
+    height: var(--height);
+    margin: 30px;
+    position: relative;
+    animation-name: pranav002;
+    /* animation-name: pranav001; */
+    
+    /* above is the name of animation and this name can be any thing  */
+    animation-duration: 5s;
+    /* above is the total time for one count of animation; */
+    /* if we want to make this animation for infinite time we can write infinite insted of this seconds */
+    animation-iteration-count: 5;
+    /* above is the number of total conunt of animation  */
+    animation-fill-mode:alternate ;
+    /* animation-fill-mode: can be of multipul time  
+    1.forward :- it is for put the animation in animated condition
+    2.alternate:-
+    3.reverse:- animation will run in opposit direction
+
+    */
+    animation-timing-function: ease-in; 
+    /* 1.ease-in :- first slow then fast 
+    2.ease-out:- first fast then slow;
+    3.ease-in-out:- slow fast slow;
+    */
+    animation-delay: 0.5s;
+    /* above is the delay time from which animation will start  */
+}
+@keyframes pranav001 {
+    from{
+       width: 200px; 
+    }
+    to{
+        width: 1000px;
+    }
+    
+    
+}
+@keyframes pranav002 {
+    0%{
+        top:0px;
+        left:0px;
+    }
+    25%{
+        top:0px;
+        left:300px;
+    }
+    50%{
+
+        top:300px;
+        left:300px;
+    }
+    75%{
+        top:300px;
+        left: 0px;
+    }
+    100%{
+        top:0px;
+        left:0px
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            This is an box.
+        </div>
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transition</title>
+    <Style>
+        .container{
+            background-color: blueviolet;
+            width: 700px;
+            height: 700px;
+            display: flex;
+            justify-content: center;
+            align-items: center;           
+        }
+        .box{
+            width: 300px;
+            height: 300px;
+            background-color:purple;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /*
+            
+            transition-property: background-color;
+            transition-duration: 3s;
+            transition-timing-function: ease-in-out;
+            transition-delay:0.3s; 
+
+            like this we can only make a single transition at a time we cannot do multiple transition at a time so for that go to line 43
+            
+            */
+
+            /*
+            
+            This is the short hand property in one line 
+            ---------------------------------------------
+            transition: background-color 3s ease-in-out 0.3s;
+            
+            */
+
+         transition: all 3s ease-in-out 0.3s;
+        
+            
+         }
+
+        p{
+            font-size: 20px;
+            color: white;
+            font-weight: bold;
+            transition-property:color;
+            transition-duration: 3s;
+            transition-delay: 0.2s;
+        }    
+           
+        .box:hover{
+            border-radius:200px;
+            background-color: orange;
+            height: 400px;
+            width:400px;
+            
+        }  
+
+           p:hover{
+            color: black;
+
+           }
+        
+           
+    </Style>
+</head>
+<body>
+    <h3>This is Transition properties tutorial</h3>
+
+<div class="container">
+    <div class="box">
+        <p>This is the golden box.</p>
+
+    </div>
+</div>
+</body>
+
+</html>

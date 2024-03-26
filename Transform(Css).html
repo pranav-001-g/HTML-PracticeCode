@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px 0px;
+        }
+        .container{
+            background-color: burlywood;
+            height: 500px;
+            width: 500px;
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            border: 2px solid brown;
+            transition: all 4s ease-in-out 9s;
+
+        }
+        .container:hover{
+            transform: rotate(-45deg);
+
+        }
+        .box{
+            background-color: brown;
+            height: 250px;
+            width: 250px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            
+            /* transform: rotate(45deg);  */
+
+            /* This only a style & when we put this style in hover and then give a transition, transition-property as all ; */
+            transition: all 4s ease-in-out 5s;
+        }
+        .box:hover{
+            transform: rotate(45deg);
+            transform: skew(20deg); /* bending of box */
+            transform: scale(1.5); /* size increasing */
+        }
+     
+     h3{
+        border: 2px solid black;
+        height: 50px;
+        width: 220px;
+        background-color: rgb(162, 162, 219);
+        transition: all 5s ease-in-out 0s;
+        text-align: center;
+    }
+     h3:hover{
+       /* transform: rotate(-720deg); */
+       transform: translate(122px,122px);
+     }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h3>Pranav Garje Jindabad</h3>
+        </div>
+    </div>
+</body>
+</html>

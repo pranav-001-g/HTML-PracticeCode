@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Information  </title>
+    <style>
+        *{
+            color: green;
+        }
+        body{
+            background-color:  rgba(128, 128, 128, 0.422);
+           /* background:url(111.jpg); */
+        }
+    </style>
+</head>
+<body>
+    <hr>
+    <h2 style="border: 1px solid blue;color: yellow;">Personal information filling form </h2> <em>001 organisation</em>
+    
+    <hr>
+    <form action="backend.php">
+       
+        <label for="name">Name:</label>
+        <div>
+            <input type="text" name="myname" id="name">
+        </div>
+        <br>
+        <div>
+            <label for="mother"> Mother name:</label>
+            <input type="text" name="my mother name" id="mother">
+        </div>
+        <br>
+        <div>
+            <label for="roll_number">Roll number</label>
+            <input type="number" name="roll_number" id="roll_number">
+        </div>
+        <br>
+        <div>
+            date of birth:<input type="date" name="date">
+        </div>
+        <br>
+        <div>
+            email:<input type="email" name="email">
+        </div>
+        <br>
+        
+        <div>
+            gender </Style>: male <input type="radio" name ="my_gender">female <input type="radio" name="my_gender"> other <input type="radio" name="my_gender">
+
+        </div>
+        <br>
+        
+    
+        <div>
+            <strong> Why should we higher you , discribe you skill </strong>
+            <br>
+            <textarea name= "my text" cols="60" rows="8"  > </textarea>
+        </div>
+        <br>
+        <div>
+            <label for="cal"> Collage: </label>
+            <select name="coll" id="cal">
+                <option value="pim">D.Y. Patil pimpri</option>
+                <option value="akur">D.Y. Patil akurdi</option>
+                <option value="bg" >B.G Classes Wanewadi</option>
+                <option value="pc" selected>PCCOE</option>
+                <option value="co">COEP</option>
+                <option value="gp">GPP</option>
+                <option value="pi">PICT</option>
+            </select>
+        </div>
+        <div>
+          
+        </div>
+        <br> 
+        <div>
+            Have you read all the information and fild it correctly ,if it is done the click on the check box 
+            <br>
+            <label for="check"><strong>YES</strong></label for="check"> / <strong>NO</strong>
+            <input type="checkbox" name="check" id="check">
+        </div>
+        <br>
+        <div>
+            <input type="submit" name="save data">
+            <input type="reset" name="delete">
+            
+        </div>
+        
+        
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+    <style>
+        .nevbar{
+            background-color: gray;
+            border-radius: 20px;
+            /* height: 40px;  */
+            /* width: 600px;  */
+             
+        }
+        .nevbar li{
+            list-style: none;
+            float: left;
+            margin: 15px 10px;
+           
+        }
+        .nevbar ul{
+            overflow: auto;  /* when we float:left the li in above code the li goes out of the backgroud color so we do overflow li in ul because li is inside the ul. if we have done float ul then to bring the ul in the background-color: we have to overflow nevbar because ul is in nevbar; */
+        }
+        .nevbar li a{
+            color: rgb(236, 231, 231);
+            background-color: rgb(59, 57, 57);
+            border-radius: 10px;
+            padding: 2px 10px;
+            text-decoration: none;
+            
+           
+            
+        }
+        .nevbar li a:hover{
+            color: aqua;
+            border: black 2px solid;
+            font-size: 15px;
+        }
+        .nevbar input{
+            float: right;
+            margin: 10px 10px;
+            background-color: white;
+            border:  rgb(59, 57, 57) 1px solid;
+            border-radius: 5px;
+            padding: 5px;
+            width: 300px;
+        }
+        
+        
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="nevbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <div class="search">
+                    <input type="text"  name="search" id="search" placeholder=" Search or type URL:">
+                </div>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>

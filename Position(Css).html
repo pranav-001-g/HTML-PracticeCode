@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position in Css</title>
+    <style>
+        .contener{
+            background-color: rgb(232, 210, 210);
+            border: black 2px solid ;
+            height:1000px;
+        }
+        .box{
+            background-color: gray;
+            border: 2px solid black;
+            margin: 2px;
+            padding: 2px;
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+
+        }
+        #box2{
+            position: static;
+            /* static position is the default position; */
+            position: relative;
+            top:10px;
+            /* relative position is the position where the block element move the postion relative to its orignal position; And leave some space between its orignal and changed position*/
+            position:absolute;
+            right:10px;
+            /* this condition is same as relative but in this case position is change according to the parent of the changing position of the block */
+
+            position:fixed;
+            right:10px;
+            bottom:2px;
+            /* by observation when we change the position like right: 10px and then it does not leave gap . it fixed all gap */
+           
+            /* In case of fixed position  the position of the block element get fixed and can cause overlaping ; can be use when the element should be seen during scrolling . like sanpchat manu; */
+           
+            position:sticky;
+            /* left: 300px; */
+           /* in sticky when we change the position of any box then other are stiked and not change position for adjusting the gap, */
+            /* this case is same as the fixed but in this case the the overlapping does not occures. almost all the use is same as fixed */
+        }
+    </style>
+</head>
+<body>
+    <div class="contener">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box4">3</div>
+        <div class="box" id="box3">4</div>
+    </div>
+    </body>
+</html>

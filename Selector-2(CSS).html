@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+            background-color: pink;
+            height: 30px;
+            font-size:20px;
+            font-weight: bold;
+            padding: 20px;
+            
+        }
+       
+        div p{
+           
+            color: blueviolet;
+            border: 2px solid violet;
+            height: 60px;
+            text-align: center;
+            align-content: center;
+        }
+        div li p{
+            
+            color:green;
+           border: 2px solid greenyellow;
+        }
+        div > p{
+           /* when there is direct element p in div ">" this symbol is used  */
+          color: red;
+          border: 2px solid orangered;
+        }
+        div + p {
+            /* this is the paragraph whoes privious sibling is div; */
+            color: white;
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        This is more on selector.
+    </h1>
+    <div class="contener">
+        <p>this is paragraph just after the div</p>
+        <div class="row">
+            <p>This is a paragraph is in side div div</p>
+            <ul>
+                <li><p>This paragraph is inside div and div and ul and li and p</p></li>
+                <li>This is inside ul and li</li>
+            </ul>
+
+        </div>
+        <p>This is paragraph is inside div </p>
+    </div>
+    <p>This is outer most paragraph</p>
+</body>
+</html>

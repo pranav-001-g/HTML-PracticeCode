@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors in CSS</title>
+    <!-- __________________________________________________________ -->
+    <!-- here we can give styles of CSS to html program -->
+    <style>
+        /* 1. style by element selector */
+        /* syntax = elment_name{properties} */
+        /* this style will make all the p having class,id or not it will affect all the paragraph 'p' */
+        p{
+            color:orange;
+        }
+        /* 2. style by id selector */
+        /* syntax = #id_name{properties} */
+        /* it will only affect the paragraph of entity having the mentiond id */
+        #secondP{
+           color: brown;
+           background-color: yellowgreen;
+        }
+        /* 3. style by class selection  */
+        /* syntax = .class_name{properties} */
+        /* it will affect all the classes having same class name as mention in syntex */
+        .Class{
+            color: palevioletred;
+            background-color: pink;
+        }
+        /* here one another example of element selector */
+        ol{
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+        <h3>Selectors in Html</h3>
+        <h4>Types of Selector</h4>
+        <ol type="1">
+            <li>CSS element selector</li>
+            <li>CSS Id selector</li>
+            <li>CSS Class selector</li>
+            <li>The CSS Group Selector</li>
+
+        </ol>
+        <hr>
+        <h4>Properties of it's type</h4>
+        <ul type ="square" style="border: 2px solid blue;">
+            <li>In <strong> Element selector </strong>all element of same type are selected and the style is given to the selected element , example <em>p,hr,h,etc </em>element if we select p that is paragraph all the paragraph in the program will get the same style</li>
+
+            <li>In <strong>ID selector </strong>, as we know id is unique so the style of every id will be differnt  </li>
+
+            <li>In case of <strong>Class</strong> , If in some condition we need some comman propeties in same type of element or different type of element we assigend the same name of class to the elements and the assigned the style to the class.</li>
+        </ul>
+
+        <hr>
+        <hr>
+        <p>First paragraph without class and id </p>
+        <p>Second paragraph without class and id </p>
+        <p>Third paragraph without class and id </p>
+        <p>Forth paragraph without class and id </p>
+        <hr>
+        <p class="element" id="firstP">
+            This paragraph has class=element and id firstP
+        </p>
+        <p class="ID" id="secondP">
+            This paragraph has class=ID and id=secondP
+        </p>
+        <p class="Class" id="thirdP">
+            This paragraph has class=Class and id=thirdP
+        </p>
+        <p class="Group" id="forthP">
+            This paragraph has class=Group and id=forthP
+        </p>
+         <hr><hr>
+</body>
+</html>

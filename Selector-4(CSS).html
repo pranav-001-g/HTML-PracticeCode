@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=ja, initial-scale=1.0">
+    <title>Selection before and after </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <style>
+       body{
+        color:white;
+        padding: 0px;
+        margin: 0px;
+       background-color: black;
+       }
+       header{
+        /* border: 2px solid white; */
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: bold;
+
+        
+        }
+        header::before{
+            content: "";
+            background: url('https://source.unsplash.com/collection/190727/1600x900') ;
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            z-index: -1;
+            opacity: 0.5;
+
+
+        }
+       .navigation{
+        list-style: none;
+        display: flex;
+    
+       }
+       li{
+        margin: 2px 20px;
+        }
+       section{
+        margin: 2px 100px;
+        /* border: 2px solid white; */
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 222px;
+        
+       }
+       p{
+        text-align: center;
+       }
+       /* section::before{ 
+        content: "content before the section.";
+       }*/
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="list">Home</li>
+                <li class="list">About</li>
+                <li class="list">Contact Us</li>
+                <li class="list">Survices</li>
+            </ul>
+        </nav>
+    </header>
+        <section>
+            <h1 style="font-size: 40px;">Welcome to coding world.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam minima, porro qui, libero quae praesentium nulla voluptatibus, quisquam amet sint temporibus cum tempora at placeat laudantium assumenda nesciunt optio nisi? Odit voluptate ullam labore.</p>
+        </section>
+    <hr>
+</body>
+</html>

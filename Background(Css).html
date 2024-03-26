@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice of form and border</title>
+    <style>
+    #pranavG{
+        /* This is when we need same for all side  */
+        background-color: rgb(116, 214, 24);
+        border: 2px solid black;
+        height: 150px;
+        width: 400px;
+    
+    }
+    #shravaniG{
+        /* Here the different style for different eadges */
+        background-color: #b19fae;
+        height: 150px;
+        width: 400px;
+        
+        border-top: rgb(32, 199, 229) 20px solid ;
+        border-bottom: green 20px solid;
+        border-left: rgb(189, 131, 23) 20px solid;
+        border-right: red 20px solid;
+        border-radius: 10px;
+        /* all border become rounded due to upper code */
+    }
+    #pranjalP{
+        /* This is when we need same for all side  */
+        background-color: rgb(116, 214, 24);
+        border: 2px solid black;
+        height: 150px;
+        width: 400px;
+        border-top-left-radius:10px; /* for top left rounding eadg */
+        border-top-right-radius: 10px;  /*for top right rounding eadges */
+        border-radius: 10px;
+       
+    
+    }
+
+    #use{
+       border: black 2px solid;  
+    }
+    #pass{
+        border:black 2px solid;
+    }
+     
+    </style>
+</head>
+<body>
+
+   
+   <div id ="pranavG">
+
+    <form action="time">
+
+       <label for="use"> Username:</label>
+          <div>
+              <input type="text" name="user" id="use">
+          </div>
+       <label for="pass"> Password:</label>
+           <div> 
+              <input type="text" name="pass" id="pass">
+           </div>
+       <br>
+           <input type="submit">
+
+    </form>
+
+   </div>
+      <br>
+      <br>
+   <div id ="shravaniG">
+    <form action="time">
+        <label for="use"> Username:</label>
+       <div>
+       <input type="text" name="user" id="use">
+       </div>
+       <label for="pass"> Password:</label>
+       <div> 
+      <input type="text" name="pass" id="pass">
+       </div>
+       <br>
+        <input type="submit">
+
+    </form>
+   </div>
+   <br>
+   <br>
+   <div id ="pranjalP">
+    <form action="time">
+        <label for="use"> Username:</label>
+       <div>
+       <input type="text" name="user" id="use">
+       </div>
+       <label for="pass"> Password:</label>
+       <div> 
+      <input type="text" name="pass" id="pass">
+       </div>
+       <br>
+        <input type="submit">
+
+    </form>
+   </div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visiablity and Z-index</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            
+        }
+        #box1{
+            background-color: green;
+
+        }
+        #box2{
+           /* visibility: hidden; */
+           /* visibility hidden will only hide the element but not the clear its space it will occuied the space which is all ready consumed;  i.e it will show the empty space*/
+           /* display: none; */
+           /* display: remove the element with its space i.e. it will not show the empty space; */
+            background-color: blue;
+
+        }
+        #box3{
+            background-color: red;
+            position: relative;
+            top:30px;
+            z-index: 4;
+
+        }
+        #box4{
+            /* The z-index only works when both the overlapping elements should be have used relative absolute static or fixed positions  */
+            background-color: yellow;
+            z-index: 10;
+            position: relative;
+            top: 20px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+</body>
+</html>

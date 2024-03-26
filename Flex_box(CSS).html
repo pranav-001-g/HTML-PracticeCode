@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex box and its properties</title>
+    <Style>
+        .contener{
+            border: solid rgb(15, 15, 145) 2px;
+            background-color: rgb(158, 158, 218);
+            height: 340px;
+            width: 100%;
+            display: flex;
+            /* properties of flex for flex contener */
+
+            /* 1.flex-direction: ; */
+             flex-direction: row;  /* flex-direction by default is row; */
+              /* other are as follow: */
+            flex-direction: row-reverse; /* arrange the item in contener for the end of the row to starting of row*/
+            flex-direction: column-revers;/* same as row arrange from bottom to top */
+            flex-direction: column;
+            flex-direction: row; /* default direction*/
+
+            /* 2.wrapping of flex */
+
+             flex-wrap: nowrap; /* is a defalut */
+             flex-wrap: wrap;  /* flex-direction is row, so the box are in horizontal direction and when we decrease the width of outer block then the inner box will go out of the block so we use wrap in case of wrap the box move down insted of going out of the block  */
+            flex-wrap: wrap-reverse;
+            flex-wrap : wrap-reverse;/*will move all the box at bottum of block and  wrap revers for example the box will move up as we decrease the width of block  */
+
+             /* shortcut for writting the flex row reverse and flex wrap */
+            flex-flow : row wrap;
+
+            flex-wrap: nowrap; /* it is the default*/
+
+            justify-content: center; /* always put the content at the center alignment  and due to flex- flow after changing the display also the box remain at the center only */
+             
+             justify-content: space-between; /* leave space between the content of box  does't leave space at start and end of box*/
+
+             justify-content: space-evenly;/* leave space equaly at start and end also */
+            
+             justify-content: space-around;/* leave space at any two side of the box , not used more  */
+
+             /* ############################################## */
+
+             align-items: center;/* bring the content at the center in vertical direction ,  */
+
+
+            }
+        .item{
+            border: 2px rgb(129, 9, 9) solid;
+            background-color: rgb(199, 187, 185);
+            margin: 3px;
+            padding:3px 3px 6px 3px;
+            height: 100px;
+            width: 100px;
+            
+        }
+        
+        #item1{
+            /* higher the order , display at last ; */
+            order: 3;
+
+            
+        }
+
+        
+        #item2{
+            
+            order: 2;
+
+        }
+        
+        #item3{
+            
+            order: 1;
+        }
+        #item4{
+            flex-grow: 3; /* when we increase the background width then it take more space then other the number of flex-grow is more it will more grow  */
+        }
+        #item5{
+            flex-shrink: 9;
+            /* when we decrease the width of background more we decrease the width of item in contener, when we decrease the length of contener. */
+        }
+        #item6{
+            align-self: center; /* to move the item at the center of contener */
+            align-self: flex-start;/* to move this item at the starting of the contener */
+            align-self: flex-end; /* to move the item at the end of the contener */
+        }
+    </Style>
+</head>
+<body>
+    <h3>
+        This is a contener
+    </h3>
+    <div class="contener">
+<div class="item" id="item1">Box 1</div>
+<div class="item" id="item2">Box 2 </div>
+<div class="item" id="item3">Box 3</div>
+<div class="item" id="item4">Box 4</div>
+<div class="item" id="item5">Box 5</div>
+<div class="item" id="item6">Box 6</div>
+    </div>
+</body>
+</html>

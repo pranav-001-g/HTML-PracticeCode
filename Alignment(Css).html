@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <!-- In this head we add links of fond which are needed in the program. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+<!-- now all links are imported form browser. -->
+    <style>
+        /* fonts are added to the body so that all font is applicable to hole/ body */
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Ubuntu', sans-serif;
+        }
+        h2{
+           
+            width: 450px;
+            height: 50px;
+            border: orange 4px solid;
+            border-radius: 50px;
+            background-color: rgb(218, 208, 191);
+            margin:3px auto;
+            padding: 4px 50px;
+        }
+        .container{
+
+            border: purple solid 3px;
+            width:800px ;
+            margin:100px auto;
+
+        }
+        .item{
+            border: rgb(212, 142, 10) solid 3px;
+            margin: 3px;
+            padding: 1px 5px;
+            background-color: rgb(220, 225, 232)
+        }
+        #fruits{
+            float: left;
+            width: 40%;
+            /* margin: 2px 300px; */
+        }
+        
+        #computer{
+           float: left; 
+            width: 40%;
+        }
+        #stationary{
+             /* float :left;  */
+             clear: left; 
+             /* this is don to make some arrangment so that all  */
+            width: 100%;
+        }
+        #fruitsP{
+            text-align: right;
+            /* They will move all the text to right of border. */
+            /* same as text-align: left; move text to left but this left align is default */
+           
+            
+        }
+        #computerP{
+            text-align: center;
+            /* move text at center */
+        }
+        #stationaryP{
+            text-align: justify;
+            /* see the result */
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Welcome to Pranav001 store</h2>
+        <div id="fruits" class="item">
+            <h3>Fruits</h3>
+            <p id="fruitsP" class="para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, ipsa maiores aspernatur praesentium tempore quae voluptas! Quidem enim voluptate magni nulla, et autem nesciunt mollitia quisquam quae error deleniti eum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse quisquam veniam placeat repellat officiis corporis necessitatibus fugiat illo sint, dignissimos molestias consequatur blanditiis distinctio. Recusandae ad id suscipit blanditiis architecto.
+            </p>
+        </div>
+        <div id="computer" class="item">
+            <h3>Computer</h3>
+            <p id="computerP" class="para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem fugiat cum inventore dolore perferendis labore officia id repellendus. Quia obcaecati magni libero quasi ipsum eos mollitia aliquid corrupti reiciendis earum. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est magni repellendus temporibus laudantium error aut magnam possimus! Dignissimos ea dolor, quos est ullam earum officiis cum dolore laborum modi iure.
+            </p>
+        </div>
+        <div id="stationary" class="item">
+            <h3>Stationary</h3>
+            <p id="stationaryP" class="para">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo atque facere, porro explicabo totam ducimus animi, maxime odio officia saepe, deserunt sed culpa. Earum et est similique magnam quos corrupti? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque nihil nam repellat. Officia, eos debitis ut dolor nesciunt assumenda numquam harum saepe inventore dolore veniam? Veritatis, impedit ipsum? Quibusdam, quo.
+            </p>
+        </div>
+        <div id="stationary-2" class="item">
+            <h3>Stationary-2</h3>
+            <p id="stationaryP" class="para">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo atque facere, porro explicabo totam ducimus animi, maxime odio officia saepe, deserunt sed culpa. Earum et est similique magnam quos corrupti? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque nihil nam repellat. Officia, eos debitis ut dolor nesciunt assumenda numquam harum saepe inventore dolore veniam? Veritatis, impedit ipsum? Quibusdam, quo.
+            </p>
+        </div>
+        
+    </div>
+</body>
+</html>

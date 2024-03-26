@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector in advanced</title>
+    <style>
+        .contener{
+           
+            width: 800px ;
+            border: 2px solid violet;
+            margin: auto;
+        }
+        input[type="text"]{
+            color: blue;
+            border: 2px solid blue;
+            padding: 4px;
+            margin: auto;
+        }
+        input[type="email"]{
+            color: goldenrod;
+            border: 2px solid goldenrod;
+            padding: 4px;
+        }
+        a[target]{
+            color: brown;
+            font-size: 20px;
+        }
+        a[target="_self"]{
+            color: blueviolet;
+        }
+        li:nth-child(3){ 
+            /* this is style for 4th child inside the paranat li */
+            font-size: 20px;
+            color:orange;
+        }
+        li:nth-child(2n+0){ /* 2n+number :- this is the formula where n always start form zero and in above example 2n+0 means it will color or style even itrations */
+
+            /* this child is for every second child in the li i.e one after anoter ; */
+            color: blue;
+        }
+        li:nth-child(odd){
+            /* for odd li childs; */
+            color: green;
+        }
+        li:nth-child(even){
+            /* for even childs */
+           background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+   <div class="contener">
+    <a href="http://google.com" target="_blank">go to google</a>
+    <br>
+    <a href="http://facebook.com" target="_self">go to facebook</a>
+    <br>
+    <a href="http://instagram.com" target="_blank">go to instagram</a>
+    <br>
+    <a href="http://whatsapp.com" target="_self">go to whatsapp</a>
+
+        <form action="" class="form-action">
+            <input type="text" name="" id="" placeholder="Enter your name" >
+            <input type="text" name="" id="" placeholder="Enter your password">
+            <input type="email" placeholder="Enter your mail id:">
+            <input type="submit" name="" id="">
+        </form>
+        <ul>
+            <li class="item" id="item1">item1</li>
+            <li class="item" id="item2">item2</li>
+            <li class="item" id="item3">item3</li>
+            <li class="item" id="item4">item4</li>
+            <li class="item" id="item5">item5</li>
+            <li class="item" id="item6">item6</li>
+            <li class="item" id="item7">item7</li>
+            <li class="item" id="item8">item8</li>
+        </ul>
+   </div>
+</body>
+</html>
